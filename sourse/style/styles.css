@@ -508,13 +508,30 @@ img {
     width: 100%;
     height: 100%;
   }
-
+  .text {
+    font-size: 40px;
+  }
+  .spani {
+    font-size: 40px;
+  }
+  .buy-count > p {
+    font-size: 30px!important;
+  }
+  .buy > a > p {
+    font-size: 40px;
+  }
   #header23 {
-    font-size: 27px;
+    font-size: 40px;
     font-weight: bold;
   }
+  .upperline {
+    margin-bottom: 20px;
+  }
   .upperline > a > img {
-    height: 5rem;
+    height: 12rem;
     margin-left: 100px;
+  }
+  .information_of_site {
+    font-size: 40px;
   }
 }
