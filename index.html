@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- О странице и создателе -->
+	<meta name="description" content="Школьный проект 10 класса 'Сайт для онлайн-заказов' Кафе Пицца и Капибара нефтеюганск МБОУ СОШ №1">
+	<meta name="ketwords" content="Кафе Пицца и Капибара, Пиццерия, Нефтеюганск Кафе, Пицца Нефтеюганск, Гитхаб">
+	<meta name="Author" content="Павленко Павел">
+	<meta name="Adress" content="Нефтеюгаснк, МБОУ СОШ №1, 1 мкр">
+	<!-- О странице и создателе -->
+
+	<title>Пиццерия "Пицца и Капибара" Главная</title>
+
+	<!-- Общий стиль страницы -->
+	<link rel="stylesheet" href="sourse/style/styles.css">
+
+	<!-- Иконка -->
+	<link rel="apple-touch-icon" sizes="180x180" href="sourse/files/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="sourse/files/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="sourse/files/favicon-16x16.png">
+	<!-- <link rel="manifest" href="/site.webmanifest"> -->
+	<!-- Иконка -->
+	
+	<!-- Шрифт -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Шрифт Rubik Mono One -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<!-- Шрифт Shantell Sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+	<!-- Шрифт -->
+	<!-- Общий стиль страницы -->
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap -->
+</head>
+
+<body>
+	<header>
+		<div class="upperline">
+			<a href=""><img src="sourse/img/Капицара .png" alt=""></a>
+
+			<p class="text" style="margin-top: auto;">
+				Кафе в <span style="color: brown;">Нефтеюганске</span>
+				<span class="spani"><br>Доставка от <span
+						style="background-color: #00ff00; border-radius: 10px; padding: 8px; padding-top: 1px; padding-bottom: 1px;">30</span>
+					мин</span>
+			</p>
+			<div class="buy-count">
+				<p id="count">
+					0
+				</p>
+			</div>
+			<div class="buy">
+				<a class="korzina" href="sourse/files/korzina.html">
+					<p class="krztext" style="padding: 15px; margin-bottom: 0px">Корзина</p>
+				</a>
+			</div>
+		</div>
+		<div class="navmenu">
+			<div class="line">
+				<a class="menu" href="#scrollspyHeading1">Пицца</a>
+				<a class="menu" href="#scrollspyHeading2">Пироги</a>
+				<a class="menu" href="#scrollspyHeading3">Комбо</a>
+				<a class="menu" href="#scrollspyHeading4">Напитки</a>
+			</div>
+		</div>
+		<div class="news">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-1 col-sm-1 col-1">
+					</div>
+					<div class="col-lg-2 col-sm-2 col-2">
+						<div class="image">
+							<span>Турнир по игре<br>Dota2 на купон!&#127942;</span>
+							<img src="sourse/img/дота.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-2 col-2">
+						<div class="image">
+							<span>Здоровая еда? <br> К нам! &#127822</span>
+							<img src="sourse/img/еда2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-2 col-2">
+						<div class="image">
+							<span>Еда в кино? <br> Без проблем!&#127829;</span>
+							<img src="sourse/img/кино.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-2 col-2">
+						<div class="image">
+							<span>Снова В школу!&#9999; Надо подкрепиться!</span>
+							<img src="sourse/img/книги.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-2 col-2">
+						<div class="image">
+							<span>Вкусная пицца здесь! <br> Не надо бегать! </span>
+							<img src="sourse/img/Пицца.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-1 col-sm-1 col-1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="toast-container position-fixed bottom-0 end-0 p-3">
+			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-header">
+					<img src="sourse/img/Капицара .png" class="rounded ml-auto me-auto" alt="...">
+					<strong class="me-auto">Корзина обнавлена!</strong>
+					<small>Только что</small>
+					<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+				</div>
+				<div class="toast-body">
+					<p id="header23">ф</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="scrollspyHeading1" class="Name_section">
+			<div class="name">
+				Пицца
+			</div>
+		</div>
+		<section class="product">
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/PIZZA_SIR.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Пицца <br> "Сплошной сыр"</h1>
+				</div>
+				<div class="price">
+					<span>от 499</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>30 см, традиционное тесто, 470 г</li>
+						<li>Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо</li>
+						<li>Традиционное тесто</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn1" id="liveToastBtn">В КОРЗИНУ</button>
+			</div>
+
+
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/PIZZA_PEPERONI.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Пицца "Карбонара"</h1>
+				</div>
+				<div class="price">
+					<span>от 799</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>30 см, традиционное тесто, 590 г</li>
+						<li>Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус
+							альфредо, итальянские травы</li>
+						<li>Традиционное тесто</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn2" id="liveToastBtn2">В КОРЗИНУ</button>
+			</div>
+		</section>
+
+
+		<div id="scrollspyHeading2" class="Name_section">
+			<div class="name">
+				Пироги
+			</div>
+		</div>
+		<section class="product">
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img style="top: 16%;" src="sourse/img/PIROG_1.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Пирог <br> "Ветчина и сыр"</h1>
+				</div>
+				<div class="price">
+					<span>от 299</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>210 г</li>
+						<li>Поджаристая чиабатта и знакомое сочетание ветчины, цыпленка, моцареллы со свежими томатами,
+							соусом ранч и чесноком</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn3" id="liveToastBtn3">В КОРЗИНУ</button>
+			</div>
+
+
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img style="top: 16%;" src="sourse/img/PIROG_2.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Пирог "Чоризо барбекю"</h1>
+				</div>
+				<div class="price">
+					<span>от 229</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>210 г</li>
+						<li>Насыщенный вкус острых колбасок чоризо и пикантной пепперони с соусами бургер и барбекю,
+							свежими томатами, маринованными огурчиками, моцареллой и луком в румяной чиабатте</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn4" id="liveToastBtn4">В КОРЗИНУ</button>
+			</div>
+		</section>
+
+
+		<div id="scrollspyHeading3" class="Name_section">
+			<div class="name">
+				Комбо
+			</div>
+		</div>
+		<section class="product">
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/KOMBO_1.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Комбо от Смешариков</h1>
+				</div>
+				<div class="price">
+					<span>от 299</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>Одобрено героями мультфильма: маленькая пицца любого вкуса и набор юного садовода. Цена
+							комбо зависит от выбранных пицц и может быть увеличена</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn5" id="liveToastBtn5">В КОРЗИНУ</button>
+			</div>
+
+
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/KOMBO_2.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Комбо "Всего по немногу"</h1>
+				</div>
+				<div class="price">
+					<span>от 599</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>Если хочется всего понемногу. Маленькая пицца, закуска, напиток и соус. Цена комбо зависит
+							от выбранных продуктов и может быть увеличена</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn6" id="liveToastBtn6">В КОРЗИНУ</button>
+			</div>
+
+
+		</section>
+		<div id="scrollspyHeading4" class="Name_section">
+			<div class="name">
+				Напитки
+			</div>
+		</div>
+		<section class="product">
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/Кофе.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Какао</h1>
+				</div>
+				<div class="price">
+					<span>от 99</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>0,3 л</li>
+						<li>Отправляемся в сладкое плавание в хорошей компании — горячее какао с молоком</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn7" id="liveToastBtn7">В КОРЗИНУ</button>
+			</div>
+
+
+			<div class="product__photo">
+				<div class="photo-container">
+					<div class="photo-main">
+						<div class="controls">
+							<img src="sourse/img/share.png" class="material-icons" alt="">
+							<img src="sourse/img/like.png" class="material-icons" alt="">
+						</div>
+						<img src="sourse/img/Чай.png" alt="green apple slice">
+					</div>
+				</div>
+			</div>
+			<div class="product__info">
+				<div class="title">
+					<h1>Таежный чай, 10 сашетов</h1>
+				</div>
+				<div class="price">
+					<span>от 59</span> ₽
+				</div>
+				<div class="description">
+					<ul>
+						<li>1 шт</li>
+						<li>На случай приятных разговоров и чтобы побыть наедине с собой. Одного саше хватит не только
+							на чашку, но и на целый чайник</li>
+					</ul>
+				</div>
+				<button class="buy--btn liveToastBtn8" id="liveToastBtn8">В КОРЗИНУ</button>
+			</div>
+		</section>
+	</section>
+
+	<footer>
+		<div class="information_of_site">
+			О нас
+			<div>
+				<a href="">Vk</a>
+			</div>
+		</div>
+	</footer>
+	<script src="sourse/style/Mini-functions.js"></script>
+	<script>
+
+	</script>
+</body>
+
+</html>
