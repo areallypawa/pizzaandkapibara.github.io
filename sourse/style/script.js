@@ -88,18 +88,16 @@ function updateQuantity(productId, quantity) {
     localStorage.setItem("cart", JSON.stringify(cart));
 
 
-    // updateDisplay(productId);
-    //Обновляю дисплей
-    const display = document.getElementById(`prices${ productId }`)
-    const final_price = document.getElementById('result')
-    if(display) {
-        const Q = Quantity(productId);
-        const P = getTotal();
-        display.textContent = Q
-        final_price.textContent = `${ P } ₽`
-    }else {
-        console.log('Нема')
-    }
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById(`prices${ productId }`).innerHTML = Quantity(productId); 
+        document.getElementById(`result`).innerHTML = `${getTotal()} Р`; 
+      }
+    };
+    xhttp.open("GET", "korzina.html", true);
+    xhttp.send();
+    location.reload();
 }
 
 let n1 = Quantity(1);
