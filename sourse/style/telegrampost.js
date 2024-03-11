@@ -40,9 +40,9 @@ document.getElementById('tg').addEventListener('submit', function(e) {
         cartStorage.forEach(el => {
             const { name, quantity } = el
     
-        message += `• ${ name } - ${ quantity } шт\n`
+        message += `• ${ name } - ${ Quantity(id) } шт\n`
     })}
-    message += `<b>Итоговая сумма: </b> ${ getTotal() }`;
+    message += `<b>Итоговая сумма: </b> ${ getTotal() } ₽`;
     
 
 
