@@ -398,7 +398,11 @@
 	</footer>
 	<script src="sourse/style/Mini-functions.js"></script>
 	<script>
-
+		window.onpageshow = function(event) {
+			if (event.persisted) {
+				window.location.reload();
+			}
+		}
 	</script>
 </body>
 
