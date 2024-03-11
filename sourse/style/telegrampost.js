@@ -38,7 +38,7 @@ document.getElementById('tg').addEventListener('submit', function(e) {
     message += `<b>Заказ: </b>\n`;
     if (cartStorage.length) {
         cartStorage.forEach(el => {
-            const { name, quantity } = el
+            const { name, id } = el
     
         message += `• ${ name } - ${ Quantity(id) } шт\n`
     })}
