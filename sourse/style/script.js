@@ -97,7 +97,7 @@ function updateQuantity(productId, quantity) {
     };
     xhttp.open("GET", "korzina.html", true);
     xhttp.send();
-    location.reload();
+
 }
 
 let n1 = Quantity(1);
