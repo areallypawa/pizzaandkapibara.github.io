@@ -1,0 +1,114 @@
+body {
+  display: block;
+}
+
+.alert {
+  flex-shrink: 1 !important;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.tabl {
+  margin-left: 3em !important;
+  margin-right: 3em !important;
+}
+
+.btnzak {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.container {
+  background-color: #f7f7f7;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #99582a;
+}
+.container > h2 {
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+}
+.obl {
+  padding-bottom: 50px;
+}
+.hide {
+  display: none !important;
+}
+
+th {
+  line-height: 2;
+}
+.btN {
+  margin-right: 10px;
+}
+.doing {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .upperline {
+    justify-content: center;
+  }
+  .upperline > a > img {
+    height: 7em;
+    margin: 0!important;
+
+  }
+  html {
+    margin: 10px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .spani {
+    font-size: 10px;
+  }
+}
+@media (max-width: 973px) {
+  .title {
+    font-size: 12px;
+  }
+  thead {
+    font-size: 14px;
+  }
+}
+@media (max-width: 710px) {
+  thead {
+    font-size: 10px;
+  }
+  .upperline > img {
+    height: 4rem;
+    margin: 0;
+  }
+}
+@media (max-width: 426px) {
+  .btN {
+    font-size: 10px !important;
+  }
+  .tabl {
+    margin: 0 !important;
+  }
+  .pass {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 321px) {
+  thead {
+    font-size: 11px;
+  }
+  .result,
+  .itogi {
+    font-size: 15px !important;
+  }
+  .title {
+    font-size: 8px !important;
+  }
+  .btN {
+    font-size: 9px !important;
+    margin: 0;
+  }
+}
