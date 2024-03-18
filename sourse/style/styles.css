@@ -117,20 +117,71 @@ html {
   border-radius: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .news {
+  padding-left: 4em;
+  padding-right: 4em;
   margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
 }
+
+.rew {
+  flex-wrap: nowrap!important;
+  overflow-x: hidden;
+
+}
+
+.cantainer {
+  align-items: center;
+  overflow-y: 300px;
+  display: flex;
+
+}
+
+
+.control {
+  display: flex;
+  width: 8%;
+  flex: 0 0 3em;
+}
+
+.control-right {
+  padding-left: 5px;
+}
+.control-left {
+  padding-right: 5px;
+}
+
+.shadowi {
+  
+  z-index: 9;
+  background-color: #33ff33;
+}
+
 
 .image>img {
   z-index: -10;
 
   width: 100%;
-  height: auto;
+  height: 260px;
   border-radius: 20px;
 
   padding: 5px;
 }
-
 .image>span {
   position: absolute;
   z-index: 10;
@@ -138,7 +189,7 @@ html {
   font-weight: bold;
   font-size: large;
 
-  margin-top: 95%;
+  margin-top: 90%;
   padding-left: 1em;
 }
 
@@ -479,11 +530,12 @@ img {
 }
 
 @media (max-width: 768px) {
-  .image>img {
-    width: 100%;
-    height: 100%;
+  .control {
+    flex: 0 0 5em;
   }
-
+  .news {
+    padding: 0;
+  }
   .upperline > a > img {
     height: 7rem;
     margin-left: 100px;
@@ -507,10 +559,6 @@ img {
 }
 
 @media (max-width: 425px) {
-  .image > img {
-    width: 100%;
-    height: 100%;
-  }
   .text {
     font-size: 40px;
   }
