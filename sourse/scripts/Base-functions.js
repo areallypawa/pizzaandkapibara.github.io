@@ -2,6 +2,23 @@ const toastTrigger = document.getElementById('liveToastBtn1')
 const toastLiveExample = document.getElementById('liveToast')
 var header = document.getElementById("header23")
 
+// КНОПКИ ВРАЩЕНИЯ Находим кнопку и добавляем событие клика
+// Находим контейнер, который может прокручиваться, и добавляем событие клика на кнопку
+const container = document.querySelector('#container');
+const buttonR = document.querySelector('#right');
+buttonR.addEventListener('click', function () {
+    container.scrollBy({
+        left: 500,
+        behavior: "smooth"
+    });
+});
+const buttonL = document.querySelector('#left');
+buttonL.addEventListener('click', function () {
+    container.scrollBy({
+        left: -500,
+        behavior: "smooth"
+    });
+});
 
 // Парсим файл с продуктами
 fetch("sourse/files/json/storage.json")
@@ -26,6 +43,15 @@ fetch("sourse/files/json/category.json")
     })
     .then(function (data) {
         localStorage.setItem("categorys", JSON.stringify(data));
+    });
+
+//Парсим файл с рекламой
+fetch("sourse/files/json/banners.json")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        localStorage.setItem("banners", JSON.stringify(data));
     });
 
 //Функция добавления в корзину
