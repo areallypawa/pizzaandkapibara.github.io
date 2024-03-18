@@ -49,7 +49,13 @@ document.getElementById('tg').addEventListener('submit', function(e) {
     axios.post(URL_API, {
         chat_id: CHET_ID,
         parse_mode: 'html',
-        text: message
+        text: message,
+        reply_markup: {
+            inline_keyboard: [
+                [{ text: '✅ Подтвердить', callback_data: 'button1_data' }],
+                [{ text: '❌ Удалить', callback_data: 'button2_data' }]
+            ]
+        }
 
     })
     .then((res) => {
