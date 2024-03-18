@@ -20,6 +20,7 @@
 	<!-- Иконка -->
 	<link rel="apple-touch-icon" sizes="180x180" href="sourse/img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="sourse/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="sourse/img/favicon/android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="sourse/img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="sourse/files/pages/site.webmanifest">
 	<!-- Иконка -->
@@ -72,44 +73,14 @@
 			</div>
 		</div>
 		<div class="news">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-1 col-sm-1 col-1">
-					</div>
-					<div class="col-lg-2 col-sm-2 col-2">
-						<div class="image">
-							<span>Турнир по игре<br>Dota2 на купон!&#127942;</span>
-							<img src="sourse/img/advertisement/дота.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-2 col-2">
-						<div class="image">
-							<span>Здоровая еда? <br> К нам! &#127822</span>
-							<img src="sourse/img/advertisement/еда2.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-2 col-2">
-						<div class="image">
-							<span>Еда в кино? <br> Без проблем!&#127829;</span>
-							<img src="sourse/img/advertisement/кино.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-2 col-2">
-						<div class="image">
-							<span>Снова В школу!&#9999; Надо подкрепиться!</span>
-							<img src="sourse/img/advertisement/книги.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-2 col-sm-2 col-2">
-						<div class="image">
-							<span>Вкусная пицца здесь! <br> Не надо бегать! </span>
-							<img src="sourse/img/advertisement/Пицца.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-lg-1 col-sm-1 col-1">
-					</div>
+			<div class="container-fluid cantainer">
+				<div class="control control-left"><div class="control-ico"><button id="left" class="btn"><img src="https://i.ibb.co/ydgcn8S/left-arrow.png" alt="left-arrow" border="0"></button></div></div>
+				<div id="container" class="row rew">
+					<!-- Сюда вставляются банеры -->
 				</div>
+				<div class="control control-right"><div class="control-ico"><button id="right" class="btn"><img src="https://i.ibb.co/6rLvSdK/right-arrow.png" alt="right-arrow" border="0"></button></div></div>
 			</div>
+			
 		</div>
 		<div class="toast-container position-fixed bottom-0 end-0 p-3">
 			<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -147,6 +118,7 @@
 				window.location.reload();
 			}
 		}
+
 	</script>
 </body>
 
