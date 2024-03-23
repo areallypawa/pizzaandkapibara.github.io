@@ -52,8 +52,8 @@ document.getElementById('tg').addEventListener('submit', function(e) {
         text: message,
         reply_markup: {
             inline_keyboard: [
-                [{ text: '✅ Подтвердить', callback_data: 'button1_data' }],
-                [{ text: '❌ Удалить', callback_data: 'button2_data' }]
+                [{ text: '✅ Подтвердить', callback_data: 'accept' }],
+                [{ text: '❌ Удалить', callback_data: 'delete' }]
             ]
         }
 
