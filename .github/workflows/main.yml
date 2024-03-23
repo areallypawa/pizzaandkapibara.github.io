@@ -15,4 +15,4 @@ jobs:
       
     - name: Copy Bot.py and GroupBot.py
       run: |
-        cp Bot.py GroupBot.py $GITHUB_WORKSPACE
+        cp sourse/TelegramBot/Bot.py sourse/TelegramBot/GroupBot.py $GITHUB_WORKSPACE
