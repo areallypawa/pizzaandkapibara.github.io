@@ -1,4 +1,4 @@
-const TOKEN = '7199612073:AAFxHrYTFe5lL5NySF3wdxrEco_8VcMS_9w';
+const TOKEN = '6895427216:AAHUd-VmtQNfR6MB_v32bO9_SQkwOEHXf-g';
 const CHET_ID = '-1002042893703';
 const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 const SUCCESS = document.getElementById("success");
