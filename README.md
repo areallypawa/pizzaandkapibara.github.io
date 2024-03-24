@@ -112,6 +112,10 @@ bot.polling(none_stop=True)
 
 
 ```
+<p align="center">
+      <img src="https://i.ibb.co/w6Ljx9r/image.png" alt="image" height="400px" border="0">
+      <img src="https://i.ibb.co/3p6wY0V/image.png" alt="image" height="400px" border="0">
+</p>
 &nbsp;&nbsp;&nbsp;&nbsp; :small_blue_diamond: Bots are written, but how do you keep them running on an ongoing basis? One of the videos below helped me find the answer. Hosting. After studying 2-5 hosting sites, I put forward the best one. replit.com - a site where you can run your code, and which may include a bot for some time. The advantages of this service:
 
 - [x] It takes no more than 2 minutes to turn on the bot :clock9:
