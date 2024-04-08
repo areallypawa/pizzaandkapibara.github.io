@@ -2,6 +2,7 @@ const TOKEN = '6895427216:AAHUd-VmtQNfR6MB_v32bO9_SQkwOEHXf-g';
 const CHET_ID = '-1002042893703';
 const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 const SUCCESS = document.getElementById("success");
+const FALL = document.getElementById('fall')
 const ZAKAZ = document.getElementById('obl');
 // const cartStorage2 = JSON.parse(localStorage.getItem("cart") || "[]")
 
@@ -70,6 +71,7 @@ document.getElementById('tg').addEventListener('submit', function(e) {
         SUCCESS.style.display = "flex"
     })
     .catch((err) => {
+        FALL.style.display = "flex"
         console.warn(err);
     })
     .finally(() => {
